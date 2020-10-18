@@ -7,12 +7,12 @@ font-family: 'Lobster', cursive;
 	height: auto;
 	margin: auto;
 	position: relative;
-	background: blue;
+	background: gray;
 
 }
 
 body{
-	background-image: url(...img/unad.png);
+	background-image: url(img/unad.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -27,5 +27,5 @@ h1{
 header{
 	width: 1000px;
 	height: auto;
-	background: red;
+	background: blue;
 }

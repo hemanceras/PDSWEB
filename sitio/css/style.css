@@ -28,14 +28,23 @@ h1{
 
 h2{
     font-family: 'Angsana New Bold';
+    color: #005883;
 }
 
 h3{
     font-family: 'Angsana New Bold';
+    color: #005883;
+}
+
+h4{
+    font-family: 'Angsana New Bold';
+    color: #005883;
 }
 
 header{
 	width: 1000px;
 	height: auto;
+	font-family: 'Angsana New Bold';
     background-color: #F0B429;
+    color: #005883;
 }

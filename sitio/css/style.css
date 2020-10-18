@@ -16,35 +16,22 @@ body{
 	background-image: url('img/unad.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: 'Angsana New Bold';
+    color: #005883;
 }
 
 h1{
-    font-family: 'Angsana New Bold';
-	margin-left: 10px;
+    margin-left: 10px;
 	font-size:	60px;
 	text-align: center;
 	color: #50B748;
 }
 
-h2{
-    font-family: 'Angsana New Bold';
-    color: #005883;
-}
-
-h3{
-    font-family: 'Angsana New Bold';
-    color: #005883;
-}
-
-h4{
-    font-family: 'Angsana New Bold';
-    color: #005883;
-}
 
 header{
 	width: 1000px;
 	height: auto;
 	font-family: 'Angsana New Bold';
     background-color: #F0B429;
-    color: #005883;
+
 }

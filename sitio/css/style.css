@@ -25,6 +25,14 @@ h1{
 	text-align: center;
 }
 
+h2{
+    font-family: 'Angsana New Bold';
+}
+
+h3{
+    font-family: 'Angsana New Bold';
+}
+
 header{
 	width: 1000px;
 	height: auto;

@@ -7,12 +7,12 @@ font-family: 'Lobster', cursive;
 	height: auto;
 	margin: auto;
 	position: relative;
-	background: gray;
+	background: blue;
 
 }
 
 body{
-	background-image: url(https://instatecno.com/wp-content/uploads/2018/06/Git-GitHub-GitLab.jpeg);
+	background-image: url(...img/unad.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 }

@@ -40,6 +40,13 @@ h2{
 
 }
 
+li{
+	float: left;
+	list-style-type: none;
+	padding: auto;
+	background: #A54686;
+	margin: 3px;
+}
 
 header{
 	width: 1000px;

@@ -20,20 +20,6 @@ body{
     color: #005883;
 }
 
-
-.menu{
-	text-align: center;
-
-}
-
-li{
-	float: left;
-	list-style-type: none;
-	padding: auto;
-	background: #A54686;
-	margin: 3px;
-}
-
 h1{
     margin-left: 10px;
 	font-size:	60px;
@@ -48,6 +34,11 @@ h2{
 	color: #F47920;
 }
 
+
+.menu{
+	text-align: center;
+
+}
 
 header{
 	width: 1000px;

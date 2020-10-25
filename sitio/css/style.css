@@ -27,6 +27,11 @@ h1{
 	color: #50B748;
 }
 
+.nav a {
+	text-align: center;
+
+}
+
 
 header{
 	width: 1000px;

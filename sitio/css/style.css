@@ -36,8 +36,11 @@ h2{
 
 
 .menu{
+	text-align: center;
 
-margin: auto;
+list-style-type: none;
+padding: 10px;
+background: black;
 
 }
 

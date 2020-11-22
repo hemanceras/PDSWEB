@@ -49,5 +49,9 @@ background: black;
 
 }
 
+.menu > li {
+float: left;
+
+}
 
 

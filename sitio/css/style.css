@@ -41,6 +41,13 @@ header{
 
 }
 
+.menu li a {
+background-color: #000;
+color: #fff;
+text-decoration: none;
+
+}
+
 .menu li {
 text-align: center;
 list-style: none;

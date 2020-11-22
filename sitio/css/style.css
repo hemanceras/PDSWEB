@@ -53,7 +53,7 @@ display: block;
 .menu li {
 text-align: center;
 list-style: none;
-margin: auto;
+height: auto;
 background: black;
 
 }

@@ -50,6 +50,7 @@ background: black;
 }
 
 .menu > li {
+margin: none;
 float: left;
 
 }

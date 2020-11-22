@@ -7,7 +7,7 @@ font-family: 'Lobster', cursive;
 	height: auto;
 	margin: auto;
 	position: relative;
-	background-color: #F47920;
+	background-color: #F0B429;
 
 
 }
@@ -17,7 +17,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Angsana New Bold';
-    color: #F0B429;
+    color: #005883;
 }
 
 h1{
@@ -43,8 +43,8 @@ header{
 
 .menu li a {
 text-align: center;
-list-style: none;
-margin: none;	
+list-style-type: none;
+margin: no
 background: black;
 
 }

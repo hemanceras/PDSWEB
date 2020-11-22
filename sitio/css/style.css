@@ -41,16 +41,11 @@ header{
 
 }
 
-.menu{
+.menu li a {
 text-align: center;
-
-}
-
-li{
-
-list-style-type: none;
-padding: 10px;
 background: black;
 
 }
+
+
 

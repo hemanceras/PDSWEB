@@ -34,15 +34,23 @@ h2{
 	color: #F47920;
 }
 
-
-.menu{
-text-align: center;
-
-}
-
 header{
 	width: 1000px;
 	height: auto;
 	background-color: #F0B429;
 
 }
+
+.menu{
+text-align: center;
+
+}
+
+li{
+float: left;;
+list-style-type: none;
+padding: 10px;
+background: black;
+
+}
+

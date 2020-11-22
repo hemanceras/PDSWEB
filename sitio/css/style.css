@@ -43,7 +43,7 @@ header{
 
 .menu li a {
 text-align: center;
-list-style-type: none;
+list-style: none;
 margin: none;	
 background: black;
 

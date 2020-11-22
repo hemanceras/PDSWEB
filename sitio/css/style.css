@@ -43,8 +43,8 @@ header{
 
 .menu li a {
 text-align: center;
-list-style-type: none;
-margin: no
+list-style: none;
+margin: none;
 background: black;
 
 }

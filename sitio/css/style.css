@@ -53,13 +53,12 @@ display: block;
 .menu li {
 text-align: center;
 list-style: none;
-margin: none;
+margin: auto;
 background: black;
 
 }
 
 .menu > li {
-margin: none;
 float: left;
 
 }

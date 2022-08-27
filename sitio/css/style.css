@@ -13,7 +13,7 @@ font-family: 'Lobster', cursive;
 }
 
 body{
-	background-image: url(../img/unad.png);
+	/*background-image: url(../img/unad.png);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Angsana New Bold';

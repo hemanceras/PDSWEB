@@ -11,20 +11,22 @@
     <div class="container">
 <h1>Calculo Producto</h1>
 
- <form action="#" method="POST">
-  <div class="mb-3 mt-3">
-    <label for="email" class="form-label">Valor de compra:</label>
-    <input type="number" class="form-control" id="email" placeholder="Ingrese Valor de compra" name="email">
+ <form action="f1" method="POST">
+  <div class="form-group">
+    <label for="vcompra">Valor de compra:</label>
+    <input type="text" class="form-control" id="v" placeholder="Ingrese Valor de compra" name="v">
+
+    <label for="utilidad">Porcentaje utilidad:</label>
+    <input type="text" class="form-control" id="u" placeholder="Ingrese Porcentaje utilidad" name="u">
+
+
+    <label for="iva">Porcentaje IVA:</label>
+    <input type="text" class="form-control" id="i" placeholder="Porcentaje IVA" name="i">
+
   </div>
-  <div class="mb-3 mt-3">
-    <label for="email" class="form-label">Porcentaje utilidad:</label>
-    <input type="number" class="form-control" id="email" placeholder="Ingrese Porcentaje utilidad" name="email">
-  </div>
-  <div class="mb-3 mt-3">
-    <label for="email" class="form-label">Porcentaje IVA:</label>
-    <input type="number" class="form-control" id="email" placeholder="Porcentaje IVA" name="email">
-  </div>
-  <button type="submit" class="btn btn-primary">Calcular</button>
+
+  <input type="Button" name="" value="calcular" onclick="suma()" class="btn btn-primary">
+  
 </form>
 </div>
 

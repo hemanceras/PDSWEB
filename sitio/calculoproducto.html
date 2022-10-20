@@ -23,7 +23,7 @@
     var g = document.f1.g.value;
     pu = (parseFloat(u)/100)*parseFloat(v);
     pi = (parseFloat(i)/100)*parseFloat(v);
-    re = parseFloat(pu)+parseFloat(pi)+parseFloat(v)
+    re = parseFloat(pu)+parseFloat(pi)+parseFloat(v);
     document.f1.r.value=re;
     document.f1.g.value=pu;
   }
@@ -32,7 +32,7 @@
 
 </script>
 
- <form action="f1" method="POST">
+ <form name="f1" action="#" method="POST">
   <div class="form-group">
     <label for="vcompra">Valor de compra:</label>
     <input type="text" class="form-control" id="v" placeholder="Ingrese Valor de compra" name="v">
@@ -44,7 +44,7 @@
     <label for="iva">Porcentaje IVA:</label>
     <input type="text" class="form-control" id="i" placeholder="Porcentaje IVA" name="i">
 
-  </div>
+  
 
   <input type="Button" name="" value="Calcular" onclick="calculo()" class="btn btn-primary">
   <input type="Button" name="" value="Borrar" onclick="reset()" class="btn btn-primary">
@@ -56,6 +56,7 @@
     <label for="ganancia">Ganancia</label>
     <input type="text" class="form-control" id="g" placeholder="Ganancia" name="g">  
 
+  </div>
 </form>
 </div>
 

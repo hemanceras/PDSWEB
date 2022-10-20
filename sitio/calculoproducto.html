@@ -8,8 +8,29 @@
   </head>
   <body>
 
-    <div class="container">
+
+
+ <div class="container">
 <h1>Calculo Producto</h1>
+
+<script>
+  function calculo(){
+
+    var v = document.f1.v.value;
+    var u = document.f1.u.value;
+    var i = document.f1.i.value;
+    var r = document.f1.r.value;
+    var g = document.f1.g.value;
+    pu = (parseFloat(u)/100)*parseFloat(v);
+    pi = (parseFloat(i)/100)*parseFloat(v);
+    re = parseFloat(pu)+parseFloat(pi)+parseFloat(v)
+    document.f1.r.value=re;
+    document.f1.g.value=pu;
+  }
+
+
+
+</script>
 
  <form action="f1" method="POST">
   <div class="form-group">
@@ -26,7 +47,7 @@
   </div>
 
   <input type="Button" name="" value="Calcular" onclick="calculo()" class="btn btn-primary">
-  <input type="Button" name="" value="Borrrar" onclick="reset()" class="btn btn-primary">
+  <input type="Button" name="" value="Borrar" onclick="reset()" class="btn btn-primary">
 
     <br><br>
     <label for="vventa">Valor Venta</label>

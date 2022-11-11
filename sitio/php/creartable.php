@@ -10,11 +10,11 @@ if (!$conn){
 }
 
 $sql = "CREATE TABLE tabla34 (
-CODIGO INT(10) PRIMARY KEY,
-NOMBRE VARCHAR(10),
-MARCA VARCHAR(10),
-PRECIO INT(15),
-CANTIDAD INT(10)
+codigo INT(10) PRIMARY KEY,
+nombre VARCHAR(10),
+marca VARCHAR(10),
+precio INT(15),
+cantidad INT(10)
 )";
 
 if (mysqli_query($conn, $sql)){

@@ -24,17 +24,57 @@ $u = $_POST['cantidad'];
 
 $sql = "INSERT INTO tabla34 (codigo,nombre,marca,precio,cantidad) VALUES ('$c','$n','$m','$p','$u')";
 
+if (mysqli_query($conn,$sql)){
+
+?>
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    
+    <div class="modal-header">
+      <h4 class="modal-title">Correcto</h4>
+      <button class="close" onclick="location.href='../ingresarproducto.html'">&times;</button>
+    </div>
+
+<div class="modal-body">
+  Datos grabados correctamente
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-danger" onclick="location.href='../ingresarproducto.html'">Cerrar</button>
+</div>
+
+  </div>
+</div>
+
+<?php
+} else {
+
+?>
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    
+    <div class="modal-header">
+      <h4 class="modal-title">Error</h4>
+      <button class="close" onclick="location.href='../ingresarproducto.html'">&times;</button>
+    </div>
+
+<div class="modal-body">
+  <?php
+  echo "Error grabando datos: <br> " . $sql . "<br>" . mysqli_error($conn);
+  ?>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-danger" onclick="location.href='../ingresarproducto.html'">Cerrar</button>
+</div>
+
+  </div>
+</div>
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
 

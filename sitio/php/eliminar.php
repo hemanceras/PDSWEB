@@ -25,33 +25,33 @@ if (mysqli_num_rows($result) > 0){
 
   while($row = mysqli_fetch_assoc($result)){
 
+$sql2 = "DELETE FROM table34 WHERE codigo=$c";
+
+if (mysqli_query($conn, $sql2)) {
+
 ?>
 
 <div class="modal-dialog">
   <div class="modal-content">
     
     <div class="modal-header">
-      <h4 class="modal-title">Correcto</h4>
-      <button class="close" onclick="location.href='../consultarproducto.html'">&times;</button>
+      <h4 class="modal-title">Eliminación de Datos</h4>
+      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
     </div>
 
 <div class="modal-body">
  
 <?php
 
-  echo "Codigo del producto: " . $row["codigo"]
-  . "<br> Nombre del producto: " . $row["nombre"]
-  . "<br> Marca del producto: " . $row["marca"]
-  . "<br> Precio del producto: " . $row["precio"]
-  . "<br> Cantidad comprada: " . $row["cantidad"]
-  . "" . "<br>";
+  echo "Registro Eliminado":
+  
 
   ?>
 
 </div>
 
 <div class="modal-footer">
-  <button class="btn btn-danger" onclick="location.href='../consultarproducto.html'">Cerrar</button>
+  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
 </div>
 
   </div>
@@ -59,7 +59,7 @@ if (mysqli_num_rows($result) > 0){
 
 <?php
 
-}
+
 
 } else {
 
@@ -69,18 +69,18 @@ if (mysqli_num_rows($result) > 0){
   <div class="modal-content">
     
     <div class="modal-header">
-      <h4 class="modal-title">Error</h4>
-      <button class="close" onclick="location.href='../consultarproducto.html'">&times;</button>
+      <h4 class="modal-title">Error en la eliminación</h4>
+      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
     </div>
 
 <div class="modal-body">
   <?php
-  echo "Ese codigo de producto no exite" . "<br>";
+  echo "Error eliminando el registro: <br>" . mysqli_error($conn);
   ?>
 </div>
 
 <div class="modal-footer">
-  <button class="btn btn-danger" onclick="location.href='../consultarproducto.html'">Cerrar</button>
+  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
 </div>
 
   </div>
@@ -91,6 +91,39 @@ if (mysqli_num_rows($result) > 0){
 
 }
 
+}
+
+}else{
+
+?>
+
+<div class="modal-dialog">
+  <div class="modal-content">
+    
+    <div class="modal-header">
+      <h4 class="modal-title">Error en la eliminación</h4>
+      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
+    </div>
+
+<div class="modal-body">
+
+
+<?php
+  echo "Ese codigo no existe <br>";
+?>
+
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
+</div>
+
+  </div>
+</div>
+
+<?php
+
+}
 
 mysqli_close($conn);
 

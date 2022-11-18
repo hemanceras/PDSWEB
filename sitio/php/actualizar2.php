@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eliminar</title>
+    <title>Actualizar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </head>
@@ -16,71 +16,39 @@ require('config.php');
 
 
 $c = $_POST['codigo'];
+$n = $_POST['nombre'];
+$m = $_POST['marca'];
+$p = $_POST['precio'];
+$u = $_POST['cantidad'];
 
 
-$sql = "SELECT * FROM table34 where codigo=$c";
-$result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 0){
+$sql = "UPDATE table34 set nombre='$n',marca='$m',precio='$p',cantidad='$u'";
 
-  while($row = mysqli_fetch_assoc($result)){
+if (mysqli_query($conn,$sql)) {
 
-$sql2 = "DELETE FROM table34 WHERE codigo=$c";
-
-if (mysqli_query($conn, $sql2)) {
 
 ?>
+
+
+
 
 <div class="modal-dialog">
   <div class="modal-content">
     
     <div class="modal-header">
-      <h4 class="modal-title">Eliminación de Datos</h4>
-      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
-    </div>
-
-<div class="modal-body">
- 
-<?php
-
-  echo "Registro Eliminado":
-  
-
-  ?>
-
-</div>
-
-<div class="modal-footer">
-  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
-</div>
-
-  </div>
-</div>
-
-<?php
-
-
-
-} else {
-
-?>
-
-<div class="modal-dialog">
-  <div class="modal-content">
-    
-    <div class="modal-header">
-      <h4 class="modal-title">Error en la eliminación</h4>
-      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
+      <h4 class="modal-title">Correcto</h4>
+      <button class="close" onclick="location.href='../actualizarproducto.html'">&times;</button>
     </div>
 
 <div class="modal-body">
   <?php
-  echo "Error eliminando el registro: <br>" . mysqli_error($conn);
+  echo "Información actualizada " . "<br>";
   ?>
 </div>
 
 <div class="modal-footer">
-  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
+  <button class="btn btn-danger" onclick="location.href='../actualizarproducto.html'">Cerrar</button>
 </div>
 
   </div>
@@ -89,11 +57,8 @@ if (mysqli_query($conn, $sql2)) {
 
 <?php
 
-}
-
-}
-
 }else{
+
 
 ?>
 
@@ -101,21 +66,18 @@ if (mysqli_query($conn, $sql2)) {
   <div class="modal-content">
     
     <div class="modal-header">
-      <h4 class="modal-title">Error en la eliminación</h4>
-      <button class="close" onclick="location.href='../eliminarproducto.html'">&times;</button>
+      <h4 class="modal-title">Error</h4>
+      <button class="close" onclick="location.href='../actualizarproducto.html'">&times;</button>
     </div>
 
 <div class="modal-body">
-
-
-<?php
-  echo "Ese codigo no existe <br>";
-?>
-
+  <?php
+  echo "Error actualizando información " . $sql . "<br>" . mysqli_error($conn);
+  ?>
 </div>
 
 <div class="modal-footer">
-  <button class="btn btn-danger" onclick="location.href='../eliminarproducto.html'">Cerrar</button>
+  <button class="btn btn-danger" onclick="location.href='../actualizarproducto.html'">Cerrar</button>
 </div>
 
   </div>

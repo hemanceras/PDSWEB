@@ -1,9 +1,9 @@
 <?php
-$servename = "localhost";
+$servername = "localhost";
 $username = "root";
-$password = "12345678"
+$password = "12345678";
 
-$conn = mysqli_connect($servename, $username, $password);
+$conn = mysqli_connect($servername, $username, $password);
 if (!$conn){
 	die("Conexión Fallida: " . mysqli_connect_error());
 }

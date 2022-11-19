@@ -23,7 +23,7 @@ $u = $_POST['cantidad'];
 
 
 
-$sql = "UPDATE table34 set nombre='$n',marca='$m',precio='$p',cantidad='$u'";
+$sql = "UPDATE tabla34 set nombre='$n',marca='$m',precio='$p',cantidad='$u'";
 
 if (mysqli_query($conn,$sql)) {
 

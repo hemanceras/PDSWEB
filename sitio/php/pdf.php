@@ -10,23 +10,23 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
 $pdf->Image('../img/unad.png',10,10,-150);
 $pdf->Ln(20);
-$pdf->Cell(90,20,'Fecha: '.date('d.m.Y.H.i.s').'',0);
+$pdf->Cell(90,40,'Fecha: '.date('d.m.Y.H.i.s').'',0);
 $pdf->Ln(10);
-$pdf->Cell(100,20,utf8_decode('REPORTES PDF'));
+$pdf->Cell(100,40,utf8_decode('REPORTE PDF'));
 $pdf->Ln(10);
 $pdf->SetFont('Arial','B',8);
-$pdf->Cell(20,20,'codigo');
-$pdf->Cell(25,20,'nombre');
-$pdf->Cell(25,20,'marca');
-$pdf->Cell(40,20,'precio');
-$pdf->Cell(40,20,'cantidad');
+$pdf->Cell(20,40,'codigo');
+$pdf->Cell(25,40,'nombre');
+$pdf->Cell(25,40,'marca');
+$pdf->Cell(25,40,'precio');
+$pdf->Cell(25,40,'cantidad');
 
 $pdf->Ln(10);
 
 $pdf->SetFont('Arial','',8);
 
 
-$query_select = 'SELECT * FROM table34';
+$query_select = 'SELECT * FROM tabla34';
 $result = mysqli_query($conn,$query_select);
 
 if (mysqli_num_rows($result) > 0) {
@@ -35,15 +35,15 @@ if (mysqli_num_rows($result) > 0) {
     	
 
 
-$pdf->Cell(20,20, $reg['codigo'], 0);
+$pdf->Cell(20,40, $reg['codigo'], 0);
 
-$pdf->Cell(25,20, utf8_decode($reg['nombre']), 0);
+$pdf->Cell(25,40, utf8_decode($reg['nombre']), 0);
 
-$pdf->Cell(25,20, utf8_decode($reg['marca']), 0);
+$pdf->Cell(25,40, utf8_decode($reg['marca']), 0);
 
-$pdf->Cell(40,20, utf8_decode($reg['precio']), 0);
+$pdf->Cell(25,40, utf8_decode($reg['precio']), 0);
 
-$pdf->Cell(40,20, utf8_decode($reg['cantidad']), 0);
+$pdf->Cell(25,40, utf8_decode($reg['cantidad']), 0);
 
 $pdf->Ln(10);
 

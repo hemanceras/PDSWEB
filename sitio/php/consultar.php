@@ -18,7 +18,7 @@ require('config.php');
 $c = $_POST['codigo'];
 
 
-$sql = "SELECT * FROM table34 where codigo=$c";
+$sql = "SELECT * FROM tabla34 where codigo=$c";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0){
